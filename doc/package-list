@@ -1,0 +1,6 @@
+com.fdmgroup.SpringbootSongProject
+com.fdmgroup.SpringbootSongProject.controllers
+com.fdmgroup.SpringbootSongProject.exceptions
+com.fdmgroup.SpringbootSongProject.model
+com.fdmgroup.SpringbootSongProject.repositories
+com.fdmgroup.SpringbootSongProject.services

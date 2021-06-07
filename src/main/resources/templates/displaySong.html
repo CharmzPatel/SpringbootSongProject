@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>List of Songs</h2>
+	<div th:each="song : ${songs}" >
+		<span th:text="*{song.name}"></span><br>
+		<span th:text="*{song.genre}"></span><br>
+		<span th:text="*{song.singer}"></span><br>
+		<span th:text="*{song.year}"></span><br>
+		<hr>
+	</div>
+	
+	
+
+	
+
+</body>
+</html>

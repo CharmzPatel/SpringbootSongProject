@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Song Added</h3>
+	
+		<div th:object="${song}">
+			Name: 
+			<span th:text="*{name}"></span>
+			<br>
+			Genre: 
+			<span th:text="*{genre}"></span>
+			<br>
+			Singer: 
+			<span th:text="*{singer}"></span>
+			<br>
+			Year: 
+			<span th:text="*{year}"></span>
+			<br>
+		</div>
+		<br>
+	<a th:href="@{/}">Go to Home Page</a>
+	<br>
+	<a th:href="@{/addSong}">Add another song</a>
+</body>
+
+
+</html>

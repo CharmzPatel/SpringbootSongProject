@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Song Page</title>
+</head>
+<body>
+	<h2>Add A New Song</h2>
+	
+	<form th:action="@{/processsong}" th:object="${song}" method="post">
+		Name: 
+		<input type="text" th:field="*{name}"> 
+		<br>
+		Genre: 
+		<input type="text" th:field="*{genre}">
+		<br>
+		Singer:  
+		<input type="text" th:field="*{singer}">
+		<br>
+		Year: 
+		<input type="text" th:field="*{year}"> 
+		<br>
+		<input type="submit" value="Add Song">
+	</form>
+</body>
+</html>

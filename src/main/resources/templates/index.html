@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>Song Catalog</h2>
+	<a th:href="@{/addSong}">Add New Song</a>
+	<br>
+	<a th:href="@{/displaySong}">Display list of all songs</a>
+	<br>
+	<a th:href="@{/delete}">Delete a song</a>
+	<br>
+	<h4>Search a Song</h4>
+ 	<form action="search" method="get">
+		<input type="text" name="searchterm"> 
+		<input type="submit" name="search">
+	</form>
+</body>
+</html>
